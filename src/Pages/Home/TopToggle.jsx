@@ -51,8 +51,9 @@ const ToggleButton = styled.button`
 const LineUnder = styled.div`
   position: absolute;
   margin-left: ${(props) => (props.isAboutActive ? "-100px" : "100px")};
-  width: 95px;
+  width: 92px;
   height: 3px;
+  bottom: 10px;
   align-self: flex-end;
   background-color: white;
   transition: margin-left 0.2s ease;

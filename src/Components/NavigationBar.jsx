@@ -10,6 +10,7 @@ const rotate = keyframes`
     transform: rotate(180deg);
   }
 `;
+
 const circleToSquare = keyframes`
   from {
     border-radius: 70%;
@@ -41,14 +42,21 @@ const Hamburger = styled.div`
   grid-template-rows: repeat(3, 1fr);
   width: 30px;
   height: 30px;
+  gap: 1px;
 
   &:hover {
     cursor: pointer;
-    animation: ${rotate} 0.2s linear;
+    animation: ${rotate} 0.2s linear forwards;
   }
   &:hover > .circle {
     cursor: pointer;
-    animation: ${circleToSquare} 0.2s ease-in-out forwards;
+    animation: ${circleToSquare} 0.2s ease-out forwards;
+  }
+  &:focus {
+    animation: ${rotate} 0.2s linear reverse;
+  }
+  &:focus > .circle {
+    animation: ${circleToSquare} 0.2s ease-out forwards reverse;
   }
 `;
 
