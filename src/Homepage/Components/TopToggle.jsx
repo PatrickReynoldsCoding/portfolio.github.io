@@ -19,8 +19,15 @@ const bounceOut = keyframes`
   }
 `;
 
+const ToggleContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin: auto;
+`;
 const ToggleButton = styled.button`
   padding: 10px 20px;
+  width: 100px;
   border: none;
   outline: none;
   background-color: #333;
@@ -42,12 +49,13 @@ const ToggleButton = styled.button`
 `;
 
 const LineUnder = styled.div`
-  position: relative;
-  left: ${(props) => (props.isAboutActive ? "0" : "50%")};
-  width: 47%;
+  position: absolute;
+  margin-left: ${(props) => (props.isAboutActive ? "-100px" : "100px")};
+  width: 95px;
   height: 3px;
+  align-self: flex-end;
   background-color: white;
-  transition: left 0.2s ease;
+  transition: margin-left 0.2s ease;
 `;
 
 const TopToggle = () => {
@@ -56,31 +64,33 @@ const TopToggle = () => {
 
   return (
     <div className="toggle-switch">
-      <ToggleButton
-        isActive={isAboutActive}
-        className={`toggle-switch__option ${
-          currentView === "about" ? "active" : ""
-        }`}
-        onClick={() => {
-          setCurrentView("about");
-          setIsAboutActive(true);
-        }}
-      >
-        About
-      </ToggleButton>
-      <ToggleButton
-        isActive={!isAboutActive}
-        className={`toggle-switch__option ${
-          currentView === "projects" ? "active" : ""
-        }`}
-        onClick={() => {
-          setCurrentView("projects");
-          setIsAboutActive(false);
-        }}
-      >
-        Projects
-      </ToggleButton>
-      <LineUnder isAboutActive={isAboutActive} />
+      <ToggleContainer>
+        <ToggleButton
+          isActive={isAboutActive}
+          className={`toggle-switch__option ${
+            currentView === "about" ? "active" : ""
+          }`}
+          onClick={() => {
+            setCurrentView("about");
+            setIsAboutActive(true);
+          }}
+        >
+          About
+        </ToggleButton>
+        <ToggleButton
+          isActive={!isAboutActive}
+          className={`toggle-switch__option ${
+            currentView === "projects" ? "active" : ""
+          }`}
+          onClick={() => {
+            setCurrentView("projects");
+            setIsAboutActive(false);
+          }}
+        >
+          Projects
+        </ToggleButton>
+        <LineUnder isAboutActive={isAboutActive} />
+      </ToggleContainer>
     </div>
   );
 };
