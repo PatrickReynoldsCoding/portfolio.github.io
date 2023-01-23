@@ -23,7 +23,7 @@ const ToggleContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 200px;
-  margin: auto;
+  margin: 30px auto;
 `;
 const ToggleButton = styled.button`
   padding: 10px 20px;

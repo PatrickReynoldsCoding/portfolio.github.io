@@ -31,9 +31,8 @@ const Navbar = styled.nav`
   color: #fff;
 `;
 
-const Logo = styled.div`
-  font-size: 1.5em;
-  font-weight: bold;
+const Logo = styled.img`
+  height: 50%;
 `;
 
 const Hamburger = styled.div`
@@ -49,7 +48,7 @@ const Hamburger = styled.div`
   }
   &:hover > .circle {
     cursor: pointer;
-    animation: ${circleToSquare} 0.2s linear forwards;
+    animation: ${circleToSquare} 0.2s ease-in-out forwards;
   }
 `;
 
@@ -59,24 +58,20 @@ const Circle = styled.div`
 `;
 
 export const NavigationBar = () => {
-  const [isHoverOn, setIsHoverOn] = useState(false);
   return (
     <Navbar>
-      <Logo>Patrick Reynolds</Logo>
-      <Hamburger
-        onMouseEnter={() => setIsHoverOn(true)}
-        onMouseLeave={() => setIsHoverOn(false)}
-      >
-        <Circle className="circle" isHoverOn={isHoverOn} />
-        <Circle className="circle" isHoverOn={isHoverOn} />
-        <Circle className="circle" isHoverOn={isHoverOn} />
-        <Circle className="circle" isHoverOn={isHoverOn} />
-        <Circle className="circle" isHoverOn={isHoverOn} />
-        <Circle className="circle" isHoverOn={isHoverOn} />
-        <Circle className="circle" isHoverOn={isHoverOn} />
-        <Circle className="circle" isHoverOn={isHoverOn} />
-        <Circle className="circle" isHoverOn={isHoverOn} />
-        <Circle className="circle" isHoverOn={isHoverOn} />
+      <Logo src="./logo.png"></Logo>
+      <Hamburger>
+        <Circle className="circle" />
+        <Circle className="circle" />
+        <Circle className="circle" />
+        <Circle className="circle" />
+        <Circle className="circle" />
+        <Circle className="circle" />
+        <Circle className="circle" />
+        <Circle className="circle" />
+        <Circle className="circle" />
+        <Circle className="circle" />
       </Hamburger>
     </Navbar>
   );
