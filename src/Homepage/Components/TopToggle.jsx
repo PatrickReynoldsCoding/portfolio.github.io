@@ -42,10 +42,12 @@ const ToggleButton = styled.button`
 `;
 
 const LineUnder = styled.div`
-  width: ${(props) => (props.isAboutActive ? "100%" : "0")};
+  position: relative;
+  left: ${(props) => (props.isAboutActive ? "0" : "50%")};
+  width: 47%;
   height: 3px;
   background-color: white;
-  transition: all 0.2s ease;
+  transition: left 0.2s ease;
 `;
 
 const TopToggle = () => {

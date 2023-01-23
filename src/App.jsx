@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import "./App.css";
 
 // Components
-import TopToggle from "./Homepage/TopToggle";
+import TopToggle from "./Homepage/Components/TopToggle";
 
 function App() {
   const [count, setCount] = useState(0);
