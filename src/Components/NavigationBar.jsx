@@ -10,6 +10,14 @@ const rotate = keyframes`
     transform: rotate(180deg);
   }
 `;
+const circleToSquare = keyframes`
+  from {
+    border-radius: 70%;
+  }
+  to {
+    border-radius: 0%;
+  }
+`;
 
 const Navbar = styled.nav`
   position: relative;
@@ -39,16 +47,15 @@ const Hamburger = styled.div`
     cursor: pointer;
     animation: ${rotate} 0.2s linear;
   }
+  &:hover > .circle {
+    cursor: pointer;
+    animation: ${circleToSquare} 0.2s linear forwards;
+  }
 `;
 
 const Circle = styled.div`
   background-color: #fff;
   border-radius: ${(props) => (props.hover ? "0%" : "70%")};
-
-  &:hover {
-    cursor: pointer;
-    animation: all 0.2s linear ease-in-out;
-  }
 `;
 
 export const NavigationBar = () => {
@@ -60,16 +67,16 @@ export const NavigationBar = () => {
         onMouseEnter={() => setIsHoverOn(true)}
         onMouseLeave={() => setIsHoverOn(false)}
       >
-        <Circle hover={isHoverOn} />
-        <Circle hover={isHoverOn} />
-        <Circle hover={isHoverOn} />
-        <Circle hover={isHoverOn} />
-        <Circle hover={isHoverOn} />
-        <Circle hover={isHoverOn} />
-        <Circle hover={isHoverOn} />
-        <Circle hover={isHoverOn} />
-        <Circle hover={isHoverOn} />
-        <Circle hover={isHoverOn} />
+        <Circle className="circle" isHoverOn={isHoverOn} />
+        <Circle className="circle" isHoverOn={isHoverOn} />
+        <Circle className="circle" isHoverOn={isHoverOn} />
+        <Circle className="circle" isHoverOn={isHoverOn} />
+        <Circle className="circle" isHoverOn={isHoverOn} />
+        <Circle className="circle" isHoverOn={isHoverOn} />
+        <Circle className="circle" isHoverOn={isHoverOn} />
+        <Circle className="circle" isHoverOn={isHoverOn} />
+        <Circle className="circle" isHoverOn={isHoverOn} />
+        <Circle className="circle" isHoverOn={isHoverOn} />
       </Hamburger>
     </Navbar>
   );
