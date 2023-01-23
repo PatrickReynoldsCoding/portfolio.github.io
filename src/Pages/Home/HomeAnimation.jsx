@@ -102,11 +102,11 @@ export const HomeAnimation = () => {
   const rotationFactor = 0.0001;
   document.addEventListener("wheel", function (event) {
     let movementY = event.deltaY * rotationFactor;
-    console.log(movementY);
+
     rotateScene(movementY);
     rotateSphere(-movementY);
   });
-  console.log(satelliteGroup.children);
+
   // Render loop
   var render = function () {
     requestAnimationFrame(render);
