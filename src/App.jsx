@@ -7,8 +7,6 @@ import { NavigationBar } from "./Components/NavigationBar";
 import TopToggle from "./Homepage/Components/TopToggle";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
       <NavigationBar />
