@@ -25,7 +25,7 @@ const Navbar = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 0px;
   height: 60px;
   width: 100vw;
   background-color: #333;
@@ -34,16 +34,17 @@ const Navbar = styled.nav`
 
 const Logo = styled.img`
   height: 50%;
+  margin-left: 3vw;
 `;
 
 const Hamburger = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  width: 30px;
-  height: 30px;
-  margin-right: 5vw;
-  gap: 1px;
+  width: auto;
+  height: auto;
+  margin-right: 3vw;
+  gap: 4px;
 
   &:hover {
     cursor: pointer;
@@ -63,6 +64,8 @@ const Hamburger = styled.div`
 
 const Circle = styled.div`
   background-color: #fff;
+  width: 10px;
+  height: 10px;
   border-radius: ${(props) => (props.hover ? "0%" : "70%")};
 `;
 
@@ -71,7 +74,6 @@ export const NavigationBar = () => {
     <Navbar>
       <Logo src="./logo.png"></Logo>
       <Hamburger>
-        <Circle className="circle" />
         <Circle className="circle" />
         <Circle className="circle" />
         <Circle className="circle" />
