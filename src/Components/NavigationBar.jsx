@@ -27,7 +27,7 @@ const Navbar = styled.nav`
   justify-content: space-between;
   padding: 0 20px;
   height: 60px;
-  width: 85vw;
+  width: 100vw;
   background-color: #333;
   color: #fff;
 `;
@@ -42,6 +42,7 @@ const Hamburger = styled.div`
   grid-template-rows: repeat(3, 1fr);
   width: 30px;
   height: 30px;
+  margin-right: 5vw;
   gap: 1px;
 
   &:hover {

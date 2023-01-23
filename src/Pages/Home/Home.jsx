@@ -7,7 +7,7 @@ import { HomeAnimation } from "./HomeAnimation";
 export default function Home() {
   return (
     <div>
-      <HomeAnimation />
+      <HomeAnimation className="animation-container" />
       <TopToggle />
     </div>
   );

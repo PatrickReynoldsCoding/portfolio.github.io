@@ -17,7 +17,7 @@ export const HomeAnimation = () => {
     0.1,
     1000
   );
-  camera.position.z = 5;
+  camera.position.z = 1;
 
   // Render setup
   var renderer = new THREE.WebGLRenderer();
