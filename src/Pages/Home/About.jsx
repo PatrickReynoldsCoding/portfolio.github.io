@@ -20,8 +20,19 @@ export default function About() {
     return () => observerRef.current.disconnect();
   }, []);
   return (
-    <div>
+    <div className="about-container">
       <section ref={observerRef} className="hidden">
+        <h2>asdfasdfas</h2>
+        <p>
+          Lorem ipsum dolor sit amet. Maiores exercitationem harum rerum nobis!
+          In dolor ipsa blanditiis perspiciatis! Eius aliquid rem exercitationem
+          nihil. Ipsa accusantium hic laborum vero. Porro tempore voluptates
+          explicabo quis? Quidem iste maiores exercitationem odit? Dolorem
+          accusamus et consequatur tempora? Dolore, debitis! Vero, ratione
+          minus. Iusto saepe odit nam sint?
+        </p>
+      </section>
+      <section ref={observerRef} className="hidden left">
         <h2>Yo sup my doodes</h2>
         <p>
           Lorem ipsum dolor sit amet. Maiores exercitationem harum rerum nobis!
@@ -43,7 +54,7 @@ export default function About() {
           minus. Iusto saepe odit nam sint?
         </p>
       </section>
-      <section ref={observerRef} className="hidden">
+      <section ref={observerRef} className="hidden left">
         <h2>Yo sup my doodes</h2>
         <p>
           Lorem ipsum dolor sit amet. Maiores exercitationem harum rerum nobis!
@@ -54,18 +65,7 @@ export default function About() {
           minus. Iusto saepe odit nam sint?
         </p>
       </section>
-      <section ref={observerRef} className="hidden">
-        <h2>Yo sup my doodes</h2>
-        <p>
-          Lorem ipsum dolor sit amet. Maiores exercitationem harum rerum nobis!
-          In dolor ipsa blanditiis perspiciatis! Eius aliquid rem exercitationem
-          nihil. Ipsa accusantium hic laborum vero. Porro tempore voluptates
-          explicabo quis? Quidem iste maiores exercitationem odit? Dolorem
-          accusamus et consequatur tempora? Dolore, debitis! Vero, ratione
-          minus. Iusto saepe odit nam sint?
-        </p>
-      </section>
-      <section ref={observerRef} className="hidden">
+      <section ref={observerRef} className="hidden left">
         <h2>Yo sup my doodes</h2>
         <p>
           Lorem ipsum dolor sit amet. Maiores exercitationem harum rerum nobis!
