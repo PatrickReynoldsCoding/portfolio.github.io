@@ -1,0 +1,33 @@
+.about-container {
+  margin-top: 30vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+section {
+  display: grid;
+  grid-column: 2 / 8;
+  place-items: center;
+  align-content: center;
+  background: black;
+  margin-bottom: 50vh;
+  padding: 5%;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(3px);
+  transition: all 1.5s;
+}
+.left {
+  grid-column: 6 / 12;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transitions: none;
+  }
+}

@@ -21,7 +21,8 @@ const circleToSquare = keyframes`
 `;
 
 const Navbar = styled.nav`
-  position: relative;
+  position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,6 +31,7 @@ const Navbar = styled.nav`
   width: 100vw;
   background-color: #333;
   color: #fff;
+  z-index: 1;
 `;
 
 const Logo = styled.img`
