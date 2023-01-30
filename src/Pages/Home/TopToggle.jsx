@@ -73,10 +73,10 @@ const TopToggle = (props) => {
 
   const handleClick = () => {
     setIsAboutActive(!isAboutActive);
-    props.switchPage();
     currentView === "about"
       ? setCurrentView("projects")
       : setCurrentView("about");
+    props.switchPage(currentView);
   };
 
   return (

@@ -10,8 +10,8 @@ import Projects from "./Projects";
 export default function Home() {
   const [showAbout, setShowAbout] = useState(true);
 
-  const switchPage = () => {
-    console.log("asdfasdf");
+  const switchPage = (page) => {
+    console.log(page);
   };
   return (
     <div>
