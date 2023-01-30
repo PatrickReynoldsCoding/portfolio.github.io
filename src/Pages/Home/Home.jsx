@@ -5,13 +5,18 @@ import styled from "styled-components";
 import TopToggle from "./TopToggle";
 import { HomeAnimation } from "./HomeAnimation";
 import About from "./About";
+import Projects from "./Projects";
 
 export default function Home() {
   const [showAbout, setShowAbout] = useState(true);
+
+  const switchPage = () => {
+    console.log("asdfasdf");
+  };
   return (
     <div>
       <HomeAnimation className="animation-container" />
-      <TopToggle onToggle={() => setShowAbout(!showAbout)} />
+      <TopToggle switchPage={switchPage} />
       {showAbout ? <About /> : <Projects />}
     </div>
   );

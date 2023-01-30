@@ -19,11 +19,7 @@ const NavigationBarAdder = (WrappedComponent) => {
 // Pages to add navigation to
 import Home from "../Pages/Home/Home";
 import Contact from "../Pages/Contact/Contact";
-import About from "../Pages/Home/About";
-import Projects from "../Pages/Home/Projects";
 
 // Run NavigationBarAdder on pages
 export const NavHome = NavigationBarAdder(Home);
 export const NavContact = NavigationBarAdder(Contact);
-export const NavAbout = NavigationBarAdder(About);
-export const NavProjects = NavigationBarAdder(Projects);

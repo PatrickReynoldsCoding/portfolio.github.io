@@ -71,6 +71,14 @@ const TopToggle = (props) => {
   const [currentView, setCurrentView] = useState("about");
   const [isAboutActive, setIsAboutActive] = useState(true);
 
+  const handleClick = () => {
+    setIsAboutActive(!isAboutActive);
+    props.switchPage();
+    currentView === "about"
+      ? setCurrentView("projects")
+      : setCurrentView("about");
+  };
+
   return (
     <ToggleContainer>
       <ToggleButton
@@ -78,11 +86,7 @@ const TopToggle = (props) => {
         className={`toggle-switch__option ${
           currentView === "about" ? "active" : ""
         }`}
-        onClick={() => {
-          setCurrentView("about");
-          setIsAboutActive(true);
-          props.onToggle();
-        }}
+        onClick={handleClick}
       >
         About
       </ToggleButton>
@@ -91,11 +95,7 @@ const TopToggle = (props) => {
         className={`toggle-switch__option ${
           currentView === "projects" ? "active" : ""
         }`}
-        onClick={() => {
-          setCurrentView("projects");
-          setIsAboutActive(false);
-          props.onToggle();
-        }}
+        onClick={handleClick}
       >
         Projects
       </ToggleButton>
