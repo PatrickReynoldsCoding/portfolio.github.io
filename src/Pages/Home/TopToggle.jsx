@@ -67,7 +67,7 @@ const LineUnder = styled.div`
   transition: margin-left 0.2s ease;
 `;
 
-const TopToggle = () => {
+const TopToggle = (props) => {
   const [currentView, setCurrentView] = useState("about");
   const [isAboutActive, setIsAboutActive] = useState(true);
 
@@ -81,6 +81,7 @@ const TopToggle = () => {
         onClick={() => {
           setCurrentView("about");
           setIsAboutActive(true);
+          props.onToggle();
         }}
       >
         About
@@ -93,6 +94,7 @@ const TopToggle = () => {
         onClick={() => {
           setCurrentView("projects");
           setIsAboutActive(false);
+          props.onToggle();
         }}
       >
         Projects
