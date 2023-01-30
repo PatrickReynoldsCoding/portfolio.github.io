@@ -72,19 +72,15 @@ export default function TopToggle(props) {
   const [isAboutActive, setIsAboutActive] = useState(true);
 
   const handleClick = () => {
-    props.switchPage("hello");
+    setIsAboutActive(!isAboutActive);
+    currentView === "about"
+      ? setCurrentView("projects")
+      : setCurrentView("about");
+    props.switchPage(currentView);
   };
-  // const handleClick = () => {
-  //   setIsAboutActive(!isAboutActive);
-  //   currentView === "about"
-  //     ? setCurrentView("projects")
-  //     : setCurrentView("about");
-  //   props.switchPage(currentView);
-  // };
 
   return (
     <ToggleContainer>
-      <button style={{ paddingTop: "100px" }} onClick={handleClick}></button>
       <ToggleButton
         isActive={isAboutActive}
         className={`toggle-switch__option ${

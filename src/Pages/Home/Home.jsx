@@ -12,7 +12,7 @@ export default function Home() {
   const [showAbout, setShowAbout] = useState(true);
 
   const switchPage = (page) => {
-    console.log(page);
+    page === "about" ? setShowAbout(true) : setShowAbout(false);
   };
   return (
     <div>
