@@ -6,6 +6,7 @@ import TopToggle from "./TopToggle";
 import { HomeAnimation } from "./HomeAnimation";
 import About from "./About";
 import Projects from "./Projects";
+import BugFix from "./BugFix";
 
 export default function Home() {
   const [showAbout, setShowAbout] = useState(true);

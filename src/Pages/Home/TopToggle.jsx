@@ -67,20 +67,24 @@ const LineUnder = styled.div`
   transition: margin-left 0.2s ease;
 `;
 
-const TopToggle = (props) => {
+export default function TopToggle(props) {
   const [currentView, setCurrentView] = useState("about");
   const [isAboutActive, setIsAboutActive] = useState(true);
 
   const handleClick = () => {
-    setIsAboutActive(!isAboutActive);
-    currentView === "about"
-      ? setCurrentView("projects")
-      : setCurrentView("about");
-    props.switchPage(currentView);
+    props.switchPage("hello");
   };
+  // const handleClick = () => {
+  //   setIsAboutActive(!isAboutActive);
+  //   currentView === "about"
+  //     ? setCurrentView("projects")
+  //     : setCurrentView("about");
+  //   props.switchPage(currentView);
+  // };
 
   return (
     <ToggleContainer>
+      <button style={{ paddingTop: "100px" }} onClick={handleClick}></button>
       <ToggleButton
         isActive={isAboutActive}
         className={`toggle-switch__option ${
@@ -102,6 +106,4 @@ const TopToggle = (props) => {
       <LineUnder isAboutActive={isAboutActive} />
     </ToggleContainer>
   );
-};
-
-export default TopToggle;
+}

@@ -29,8 +29,6 @@ export default function About() {
   }, []);
   return (
     <div>
-      <HomeAnimation className="animation-container" />
-      <TopToggle />
       <article className="about-container">
         <div ref={observerRef} className="scroll-area">
           <section className="hidden">
