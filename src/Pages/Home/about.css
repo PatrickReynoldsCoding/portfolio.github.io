@@ -1,16 +1,26 @@
 .about-container {
-  margin-top: 30vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-section {
+
+.about-container > section > p {
+  font-size: 20px;
+}
+.scroll-area {
+  height: 100vh;
+  width: 100vw;
   display: grid;
   grid-column: 2 / 8;
-  place-items: center;
+
+  padding: 2%;
   align-content: center;
+}
+section {
   background: black;
-  margin-bottom: 50vh;
-  padding: 5%;
+  margin: 40vh 0;
+  padding: 2%;
+  width: 70vw;
+  place-items: center;
 }
 
 .hidden {
@@ -19,7 +29,7 @@ section {
   transition: all 1.5s;
 }
 .left {
-  grid-column: 6 / 12;
+  grid-column: 6 / 8;
 }
 .show {
   opacity: 1;
