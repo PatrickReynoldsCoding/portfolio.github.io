@@ -82,6 +82,7 @@ export default function TopToggle(props) {
   return (
     <ToggleContainer>
       <ToggleButton
+        disabled={isAboutActive}
         isActive={isAboutActive}
         className={`toggle-switch__option ${
           currentView === "about" ? "active" : ""
@@ -91,6 +92,7 @@ export default function TopToggle(props) {
         About
       </ToggleButton>
       <ToggleButton
+        disabled={!isAboutActive}
         isActive={!isAboutActive}
         className={`toggle-switch__option ${
           currentView === "projects" ? "active" : ""

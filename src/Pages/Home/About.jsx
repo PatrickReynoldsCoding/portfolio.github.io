@@ -8,25 +8,25 @@ import { HomeAnimation } from "./HomeAnimation";
 export default function About() {
   const observerRef = useRef(null);
 
-  useEffect(() => {
-    observerRef.current = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-          window.scrollTo({
-            top: entry.target.offsetTop - window.innerHeight / 2,
-            left: 0,
-            behavior: "smooth",
-          });
-        } else {
-          entry.target.classList.remove("show");
-        }
-      });
-    });
-    const hiddenElements = document.querySelectorAll(".hidden");
-    hiddenElements.forEach((el) => observerRef.current.observe(el));
-    return () => observerRef.current.disconnect();
-  }, []);
+  // useEffect(() => {
+  //   observerRef.current = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         entry.target.classList.add("show");
+  //         window.scrollTo({
+  //           top: entry.target.offsetTop - window.innerHeight / 2,
+  //           left: 0,
+  //           behavior: "smooth",
+  //         });
+  //       } else {
+  //         entry.target.classList.remove("show");
+  //       }
+  //     });
+  //   });
+  //   const hiddenElements = document.querySelectorAll(".hidden");
+  //   hiddenElements.forEach((el) => observerRef.current.observe(el));
+  //   return () => observerRef.current.disconnect();
+  // }, []);
   return (
     <div>
       <article className="about-container">
