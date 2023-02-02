@@ -4,9 +4,9 @@ import "./projects.css";
 export default function ProjectCard(props) {
   return (
     <img
+      className="project-card-img"
       src="./project_card_images/PokemonMatch.gif"
-      className="project-card"
       alt="test 1"
-    ></img>
+    />
   );
 }
