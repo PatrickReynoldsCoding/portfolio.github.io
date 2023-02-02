@@ -7,34 +7,34 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectCardContainer() {
   const projects = [
     {
-      name: "testing 1",
+      key: "testing-1",
       src: "../../public/project_card_images/PokemonMatch.gif",
     },
     {
-      name: "testing 2",
+      key: "testing-2",
       src: "../../public/project_card_images/PokemonMatch.gif",
     },
     {
-      name: "testing 3",
+      key: "testing-3",
       src: "../../public/project_card_images/PokemonMatch.gif",
     },
     {
-      name: "testing 4",
+      key: "testing-4",
       src: "../../public/project_card_images/PokemonMatch.gif",
     },
     {
-      name: "testing 5",
+      key: "testing-5",
       src: "../../public/project_card_images/PokemonMatch.gif",
     },
     {
-      name: "testing 6",
+      key: "testing-6",
       src: "../../public/project_card_images/PokemonMatch.gif",
     },
   ];
   return (
     <div className="project-container">
       {projects.map((project) => {
-        return <ProjectCard project={project} key={project.name} />;
+        return <ProjectCard project={project} key={project.key} />;
       })}
     </div>
   );

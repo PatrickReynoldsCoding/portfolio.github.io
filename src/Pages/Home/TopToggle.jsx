@@ -26,7 +26,7 @@ const ToggleContainer = styled.div`
   display: flex;
   top: 0;
   min-width: 100vw;
-  height: 100vh;
+
   align-items: flex-start;
   justify-content: center;
   width: auto;
@@ -43,6 +43,7 @@ const ToggleButton = styled.button`
   cursor: pointer;
   transition: background-color 0.2s ease;
   animation: ${(props) => (props.isActive ? bounceIn : bounceOut)} 0.5s;
+  z-index: 2;
 
   &.active {
     background-color: #ddd;

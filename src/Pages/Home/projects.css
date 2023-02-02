@@ -18,9 +18,9 @@
   ); /* adjust the 20px to the desired space between children */
   margin: 2px; /* adjust to your needs */
 }
-.project-card :hover {
+.project-card:hover {
   transition: filter 0.3s;
-  filter: grayscale(100%) brightness(70%);
+  filter: grayscale(60%) brightness(70%);
   cursor: pointer;
 }
 
