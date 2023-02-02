@@ -31,7 +31,6 @@ const ToggleContainer = styled.div`
   justify-content: center;
   width: auto;
   margin: 84px auto;
-  z-index: 1;
 `;
 const ToggleButton = styled.button`
   padding: 10px 20px;
@@ -40,7 +39,6 @@ const ToggleButton = styled.button`
   outline: none;
   background-color: #333;
   color: #fff;
-
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.2s ease;

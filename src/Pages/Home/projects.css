@@ -1,21 +1,30 @@
 .project-container {
   width: 100vw;
   margin: 0;
-  padding: 20vh 0;
+  padding: 20vh 0vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 8px;
 }
+
 .project-card {
-  min-width: 30%; /* adjust to your needs */
+  object-fit: cover;
+  aspect-ratio: 5 / 3;
+  min-width: 20%; /* adjust to your needs */
   flex-basis: calc(
-    33.33% - 20px
+    33% - 20px
   ); /* adjust the 20px to the desired space between children */
   margin: 2px; /* adjust to your needs */
 }
+.project-card :hover {
+  transition: filter 0.3s;
+  filter: grayscale(100%) brightness(70%);
+  cursor: pointer;
+}
 
-@media (max-width: 770px) {
+@media (max-width: 1080px) {
   .project-container {
     gap: 1px;
   }

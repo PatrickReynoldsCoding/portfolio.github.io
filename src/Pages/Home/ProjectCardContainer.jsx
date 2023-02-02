@@ -8,27 +8,27 @@ export default function ProjectCardContainer() {
   const projects = [
     {
       name: "testing 1",
-      src: "../../public/project_card_images/PokemonMatch.png",
+      src: "../../public/project_card_images/PokemonMatch.gif",
     },
     {
       name: "testing 2",
-      src: "../../public/project_card_images/PokemonMatch.png",
+      src: "../../public/project_card_images/PokemonMatch.gif",
     },
     {
       name: "testing 3",
-      src: "../../public/project_card_images/PokemonMatch.png",
+      src: "../../public/project_card_images/PokemonMatch.gif",
     },
     {
       name: "testing 4",
-      src: "../../public/project_card_images/PokemonMatch.png",
+      src: "../../public/project_card_images/PokemonMatch.gif",
     },
     {
       name: "testing 5",
-      src: "../../public/project_card_images/PokemonMatch.png",
+      src: "../../public/project_card_images/PokemonMatch.gif",
     },
     {
       name: "testing 6",
-      src: "../../public/project_card_images/PokemonMatch.png",
+      src: "../../public/project_card_images/PokemonMatch.gif",
     },
   ];
   return (
