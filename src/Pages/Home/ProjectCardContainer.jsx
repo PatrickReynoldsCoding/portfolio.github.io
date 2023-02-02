@@ -14,6 +14,22 @@ export default function ProjectCardContainer() {
       name: "testing 2",
       src: "../../public/project_card_images/PokemonMatch.png",
     },
+    {
+      name: "testing 3",
+      src: "../../public/project_card_images/PokemonMatch.png",
+    },
+    {
+      name: "testing 4",
+      src: "../../public/project_card_images/PokemonMatch.png",
+    },
+    {
+      name: "testing 5",
+      src: "../../public/project_card_images/PokemonMatch.png",
+    },
+    {
+      name: "testing 6",
+      src: "../../public/project_card_images/PokemonMatch.png",
+    },
   ];
   return (
     <div className="project-container">
