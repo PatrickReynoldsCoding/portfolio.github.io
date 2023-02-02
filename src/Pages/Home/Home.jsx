@@ -1,17 +1,31 @@
-import React, { Component } from "react";
+import React, { useState, useEffect, Component } from "react";
 import styled from "styled-components";
 
 // Components
 import TopToggle from "./TopToggle";
 import { HomeAnimation } from "./HomeAnimation";
 import About from "./About";
+import Projects from "./Projects";
 
 export default function Home() {
+  const [showAbout, setShowAbout] = useState(true);
+  const [animationHasMounted, setAnimationHasMounted] = useState(false);
+
+  const switchPage = (page) => {
+    page === "about" ? setShowAbout(true) : setShowAbout(false);
+  };
+
+  useEffect(() => {
+    setAnimationHasMounted(true);
+  }, []);
+
   return (
     <div>
-      <HomeAnimation className="animation-container" />
-      <TopToggle />
-      <About />
+      {animationHasMounted ? null : (
+        <HomeAnimation className="animation-container" />
+      )}
+      <TopToggle switchPage={switchPage} />
+      {showAbout ? <Projects /> : <About />}
     </div>
   );
 }

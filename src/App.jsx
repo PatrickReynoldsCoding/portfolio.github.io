@@ -7,8 +7,7 @@ import "./App.css";
 import { NavigationBar } from "./Components/NavigationBar";
 
 // Pages
-import { NavHome } from "./Components/NavigationBarAdder";
-import { NavContact } from "./Components/NavigationBarAdder";
+import { NavHome, NavContact } from "./Components/NavigationBarAdder";
 
 function App() {
   return (
