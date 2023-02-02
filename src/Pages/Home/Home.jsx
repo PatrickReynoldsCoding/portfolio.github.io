@@ -12,7 +12,7 @@ export default function Home() {
   const [animationHasMounted, setAnimationHasMounted] = useState(false);
 
   const switchPage = (page) => {
-    page === "about" ? setShowAbout(true) : setShowAbout(false);
+    page === "projects" ? setShowAbout(true) : setShowAbout(false);
   };
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function Home() {
         <HomeAnimation className="animation-container" />
       )}
       <TopToggle switchPage={switchPage} />
-      {showAbout ? <Projects /> : <About />}
+      {showAbout ? <About /> : <Projects />}
     </div>
   );
 }
