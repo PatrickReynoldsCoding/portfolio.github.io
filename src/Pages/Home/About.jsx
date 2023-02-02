@@ -1,10 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./about.css";
 
-// Components
-import TopToggle from "./TopToggle";
-import { HomeAnimation } from "./HomeAnimation";
-
 export default function About() {
   const observerRef = useRef(null);
 
