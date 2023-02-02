@@ -1,0 +1,12 @@
+.project-container {
+  max-width: 90vw;
+  padding-top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.project-card {
+  display: block;
+  min-width: 33%;
+}
