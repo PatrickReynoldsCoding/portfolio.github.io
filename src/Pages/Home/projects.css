@@ -22,7 +22,6 @@
 }
 .project-card-img {
   align-self: flex-start;
-  background-image: url("./project_card_images/PokemonMatch.gif");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -39,7 +38,7 @@
   filter: contrast(500%) brightness(1000%);
   display: none;
   color: #e2ff00;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .project-card:hover .project-card-text {
@@ -58,6 +57,9 @@
     min-width: 48vw;
     flex-basis: calc(50% - 20px);
     margin-bottom: 4px;
+  }
+  .project-card-text {
+    font-size: 40px;
   }
 }
 
