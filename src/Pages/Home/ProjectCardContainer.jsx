@@ -7,31 +7,88 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectCardContainer() {
   const projects = [
     {
-      key: "testing-1",
-      subtitle: "",
-      website: "",
-      github: "",
-      gif: "../../public/project_card_images/PokemonMatch.gif",
+      key: "Pokemon Match",
+      subtitle:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
+      details: "",
+      links: {
+        website: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+        github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
+      },
+      images: {
+        gif: "../../public/project_card_images/PokemonMatch.gif",
+        projectImage: "",
+      },
     },
     {
-      key: "testing-2",
-      gif: "../../public/project_card_images/PokemonMatch.gif",
+      key: "SweepStakes 2022",
+      subtitle:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
+      details: "",
+      links: {
+        website: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+        github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
+      },
+      images: {
+        gif: "../../public/project_card_images/PokemonMatch.gif",
+        projectImage: "",
+      },
     },
     {
-      key: "testing-3",
-      gif: "../../public/project_card_images/PokemonMatch.gif",
+      key: "PairUp",
+      subtitle:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
+      details: "",
+      links: {
+        website: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+        github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
+      },
+      images: {
+        gif: "../../public/project_card_images/PokemonMatch.gif",
+        projectImage: "",
+      },
     },
     {
-      key: "testing-4",
-      gif: "../../public/project_card_images/PokemonMatch.gif",
+      key: "The Facebook",
+      subtitle:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
+      details: "",
+      links: {
+        website: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+        github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
+      },
+      images: {
+        gif: "../../public/project_card_images/PokemonMatch.gif",
+        projectImage: "",
+      },
     },
     {
-      key: "testing-5",
-      gif: "../../public/project_card_images/PokemonMatch.gif",
+      key: "MakersAirBnB",
+      subtitle:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
+      details: "",
+      links: {
+        website: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+        github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
+      },
+      images: {
+        gif: "../../public/project_card_images/PokemonMatch.gif",
+        projectImage: "",
+      },
     },
     {
-      key: "testing-6",
-      gif: "../../public/project_card_images/PokemonMatch.gif",
+      key: "React ToDo app",
+      subtitle:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
+      details: "",
+      links: {
+        website: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+        github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
+      },
+      images: {
+        gif: "../../public/project_card_images/PokemonMatch.gif",
+        projectImage: "",
+      },
     },
   ];
   return (
