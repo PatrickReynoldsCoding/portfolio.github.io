@@ -10,39 +10,44 @@
 }
 
 .project-card {
-  background-image: url("./project_card_images/PokemonMatch.gif");
-  background-size: cover;
-  background-position: center;
-  width: 20%;
-  aspect-ratio: 5 / 3;
-  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-basis: calc(
     33% - 20px
   ); /* adjust the 20px to the desired space between children */
   text-align: center;
-  object-fit: cover;
+
   min-width: 20%; /* adjust to your needs */
 }
+.project-card-img {
+  align-self: flex-start;
+  background-image: url("./project_card_images/PokemonMatch.gif");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 5 / 3;
+  width: 100%;
+}
 .project-card:hover {
-  transition: filter 0.3s;
-  filter: grayscale(60%) brightness(70%);
   cursor: pointer;
 }
 
-.project-card:after {
-  content: "Your Text Here";
+.project-card-text {
+  position: absolute;
+  transition: filter 0.3s;
+  filter: contrast(500%) brightness(1000%);
   display: none;
   color: #e2ff00;
   font-size: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; /* centres horizontally*/
-  filter: brightness(150%);
 }
-.project-card:hover:after {
+
+.project-card:hover .project-card-text {
   display: block;
+}
+.project-card:hover .project-card-img {
+  transition: filter 0.3s;
+  filter: grayscale(60%) brightness(70%);
 }
 
 @media (max-width: 1080px) {
