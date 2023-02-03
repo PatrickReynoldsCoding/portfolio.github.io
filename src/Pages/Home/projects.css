@@ -16,6 +16,8 @@
     33% - 20px
   ); /* adjust the 20px to the desired space between children */
   text-align: center;
+  object-fit: cover;
+  min-width: 20%; /* adjust to your needs */
 }
 .project-card:hover {
   transition: filter 0.3s;
@@ -23,15 +25,7 @@
   cursor: pointer;
 }
 
-.project-card-img {
-  object-fit: cover;
-  aspect-ratio: 5 / 3;
-  min-width: 20%; /* adjust to your needs */
-  flex-basis: calc(
-    33% - 20px
-  ); /* adjust the 20px to the desired space between children */
-}
-/* @media (max-width: 1080px) {
+@media (max-width: 1080px) {
   .project-container {
     gap: 1px;
   }
@@ -48,4 +42,4 @@
     flex-basis: calc(80% - 20px);
     margin-bottom: 20px;
   }
-} */
+}
