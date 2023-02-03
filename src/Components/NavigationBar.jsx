@@ -29,9 +29,9 @@ const Navbar = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 0 0px;
-  height: 60px;
+  height: 80px;
   width: 100vw;
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
   z-index: 1;
 `;

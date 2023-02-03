@@ -4,11 +4,11 @@ import * as THREE from "three";
 export const OrbitingShapes = () => {
   // Three.js scene setup
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x000033);
+  scene.background = new THREE.Color(0x00000);
 
   // Camera setup
   const camera = new THREE.PerspectiveCamera(
-    75,
+    1000,
     window.innerWidth / window.innerHeight,
     0.1,
     1000
@@ -76,7 +76,7 @@ export const OrbitingShapes = () => {
     );
 
     // speed of orbit
-    const satelliteSpeeds = [0.025, -0.025, -0.05];
+    const satelliteSpeeds = [0.0025, -0.0025, -0.005];
 
     const pivot = new THREE.Object3D();
     pivot.orbitSpeed =
