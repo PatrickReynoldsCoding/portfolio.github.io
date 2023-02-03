@@ -1,5 +1,14 @@
 import React, { useEffect, useRef } from "react";
 
+import "./projects.css";
+
+//components
+import ProjectCardContainer from "./ProjectCardContainer";
+
 export default function Projects() {
-  return <div style={{ paddingTop: "100px" }}>projects</div>;
+  return (
+    <div>
+      <ProjectCardContainer />
+    </div>
+  );
 }

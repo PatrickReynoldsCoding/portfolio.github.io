@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 
+//components
+import YoutubeIcon from "./YoutubeIcon";
 // Animations
 const rotate = keyframes`
   from {
@@ -27,9 +29,9 @@ const Navbar = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 0 0px;
-  height: 60px;
+  height: 80px;
   width: 100vw;
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
   z-index: 1;
 `;
@@ -39,30 +41,32 @@ const Logo = styled.img`
   margin-left: 3vw;
 `;
 
-const Hamburger = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  width: auto;
-  height: auto;
-  margin-right: 3vw;
-  gap: 4px;
+const Youtube = styled.a``;
 
-  &:hover {
-    cursor: pointer;
-    animation: ${rotate} 0.2s linear forwards;
-  }
-  &:hover > .circle {
-    cursor: pointer;
-    animation: ${circleToSquare} 0.2s ease-out forwards;
-  }
-  &:focus {
-    animation: ${rotate} 0.2s linear reverse;
-  }
-  &:focus > .circle {
-    animation: ${circleToSquare} 0.2s ease-out forwards reverse;
-  }
-`;
+// const Hamburger = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   grid-template-rows: repeat(3, 1fr);
+//   width: auto;
+//   height: auto;
+//   margin-right: 3vw;
+//   gap: 4px;
+
+//   &:hover {
+//     cursor: pointer;
+//     animation: ${rotate} 0.2s linear forwards;
+//   }
+//   &:hover > .circle {
+//     cursor: pointer;
+//     animation: ${circleToSquare} 0.2s ease-out forwards;
+//   }
+//   &:focus {
+//     animation: ${rotate} 0.2s linear reverse;
+//   }
+//   &:focus > .circle {
+//     animation: ${circleToSquare} 0.2s ease-out forwards reverse;
+//   }
+// `;
 
 const Circle = styled.div`
   background-color: #fff;
@@ -75,7 +79,7 @@ export const NavigationBar = () => {
   return (
     <Navbar>
       <Logo src="./logo.png"></Logo>
-      <Hamburger>
+      {/* <Hamburger>
         <Circle className="circle" />
         <Circle className="circle" />
         <Circle className="circle" />
@@ -85,7 +89,8 @@ export const NavigationBar = () => {
         <Circle className="circle" />
         <Circle className="circle" />
         <Circle className="circle" />
-      </Hamburger>
+      </Hamburger> */}
+      <YoutubeIcon />
     </Navbar>
   );
 };
