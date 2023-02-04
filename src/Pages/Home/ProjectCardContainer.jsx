@@ -30,7 +30,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "../../public/project_card_images/PokemonMatch(low).gif",
+        gif: "https://patrickreynolds.dev/public/project_card_images/PokemonMatch(low).gif",
         projectImage: "",
       },
     },
