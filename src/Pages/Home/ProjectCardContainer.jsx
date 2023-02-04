@@ -9,14 +9,14 @@ export default function ProjectCardContainer() {
     {
       key: "Pokemon Match",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
+        "A Pokemon memory match game. Match all 6 pokemon to set 3 stars. But, Watch out for Team Rocket",
       details: "",
       links: {
         website: "https://vercel.com/patrickreynoldscoding/pokemon-match",
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "../../public/project_card_images/PokemonMatch.gif",
+        gif: "../../public/project_card_images/PokemonMatch(low).gif",
         projectImage: "",
       },
     },
@@ -30,7 +30,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "../../public/project_card_images/PokemonMatch.gif",
+        gif: "../../public/project_card_images/PokemonMatch(low).gif",
         projectImage: "",
       },
     },
@@ -44,7 +44,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "../../public/project_card_images/PokemonMatch.gif",
+        gif: "../../public/project_card_images/PokemonMatch(low).gif",
         projectImage: "",
       },
     },
@@ -58,7 +58,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "../../public/project_card_images/PokemonMatch.gif",
+        gif: "../../public/project_card_images/PokemonMatch(low).gif",
         projectImage: "",
       },
     },
@@ -72,7 +72,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "../../public/project_card_images/PokemonMatch.gif",
+        gif: "../../public/project_card_images/PokemonMatch(low).gif",
         projectImage: "",
       },
     },
@@ -86,7 +86,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "../../public/project_card_images/PokemonMatch.gif",
+        gif: "../../public/project_card_images/PokemonMatch(low).gif",
         projectImage: "",
       },
     },
