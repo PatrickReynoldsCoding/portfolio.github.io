@@ -16,7 +16,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "../../public/project_card_images/PokemonMatch(low).webp",
+        gif: "../../public/project_card_images/giphy.gif",
         projectImage: "",
       },
     },
