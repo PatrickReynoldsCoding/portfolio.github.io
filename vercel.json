@@ -1,0 +1,10 @@
+{
+  "headers": [
+    {
+      "src": "/*.gif",
+      "headers": {
+        "Content-Type": "image/gif"
+      }
+    }
+  ]
+}
