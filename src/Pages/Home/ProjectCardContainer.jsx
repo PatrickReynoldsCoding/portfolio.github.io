@@ -18,7 +18,7 @@ export default function ProjectCardContainer() {
         },
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
-      images: {
+      media: {
         gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
         projectImage: "",
       },
@@ -35,15 +35,14 @@ export default function ProjectCardContainer() {
         },
         github: "https://github.com/chowieuk/sweepstakes-app",
       },
-      images: {
+      media: {
         gif: "./project_card_images/project-gifs/sweepstakes-high.gif",
         projectImage: "",
       },
     },
     {
       key: "PairUp",
-      subtitle:
-        "A Pokemon memory match game. Match all 6 pokemon to set 3 stars. But, Watch out for Team Rocket",
+      subtitle: "Connect, Collaborate & Create.",
       details: "",
       links: {
         website: {
@@ -52,9 +51,20 @@ export default function ProjectCardContainer() {
         },
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
-      images: {
+      media: {
         gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
         projectImage: "",
+        youtube: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Tnpo-pIIVx0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
     },
     {
@@ -69,7 +79,7 @@ export default function ProjectCardContainer() {
         },
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
-      images: {
+      media: {
         gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
         projectImage: "",
       },
@@ -86,7 +96,7 @@ export default function ProjectCardContainer() {
         },
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
-      images: {
+      media: {
         gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
         projectImage: "",
       },
@@ -103,7 +113,7 @@ export default function ProjectCardContainer() {
         },
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
-      images: {
+      media: {
         gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
         projectImage: "",
       },

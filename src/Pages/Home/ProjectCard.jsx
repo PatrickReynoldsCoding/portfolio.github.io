@@ -7,7 +7,7 @@ export default function ProjectCard(props) {
     <div className="project-card">
       <img
         className="project-card-img"
-        src={props.project.images.gif}
+        src={props.project.media.gif}
         type="image/gif"
       />
       <div className="project-card-text">
