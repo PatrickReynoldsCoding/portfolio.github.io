@@ -16,7 +16,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "./project_card_images/PokemonMatch(high).gif",
+        gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
         projectImage: "",
       },
     },
@@ -30,7 +30,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "./project_card_images/PokemonMatch(high).gif",
+        gif: "./project_card_images/project-gifs/sweepstakes-high.gif",
         projectImage: "",
       },
     },
@@ -98,4 +98,4 @@ export default function ProjectCardContainer() {
       })}
     </div>
   );
-} //asdasdads
+}
