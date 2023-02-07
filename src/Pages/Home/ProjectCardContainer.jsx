@@ -12,7 +12,10 @@ export default function ProjectCardContainer() {
         "A Pokemon memory match game. Match all 6 pokemon to set 3 stars. But, Watch out for Team Rocket",
       details: "",
       links: {
-        website: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+        website: {
+          url: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+          deployed: true,
+        },
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
@@ -26,8 +29,11 @@ export default function ProjectCardContainer() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
       details: "",
       links: {
-        website: "https://vercel.com/patrickreynoldscoding/pokemon-match",
-        github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
+        website: {
+          url: "https://chowie.uk/",
+          deployed: false,
+        },
+        github: "https://github.com/chowieuk/sweepstakes-app",
       },
       images: {
         gif: "./project_card_images/project-gifs/sweepstakes-high.gif",
@@ -37,56 +43,68 @@ export default function ProjectCardContainer() {
     {
       key: "PairUp",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
+        "A Pokemon memory match game. Match all 6 pokemon to set 3 stars. But, Watch out for Team Rocket",
       details: "",
       links: {
-        website: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+        website: {
+          url: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+          deployed: true,
+        },
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "./project_card_images/PokemonMatch(high).gif",
+        gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
         projectImage: "",
       },
     },
     {
       key: "The Facebook",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
+        "A Pokemon memory match game. Match all 6 pokemon to set 3 stars. But, Watch out for Team Rocket",
       details: "",
       links: {
-        website: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+        website: {
+          url: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+          deployed: true,
+        },
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "./project_card_images/PokemonMatch(high).gif",
+        gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
         projectImage: "",
       },
     },
     {
-      key: "MakersAirBnB",
+      key: "MakersAirBNB",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
+        "A Pokemon memory match game. Match all 6 pokemon to set 3 stars. But, Watch out for Team Rocket",
       details: "",
       links: {
-        website: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+        website: {
+          url: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+          deployed: true,
+        },
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "./project_card_images/PokemonMatch(high).gif",
+        gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
         projectImage: "",
       },
     },
     {
-      key: "React ToDo app",
+      key: "React Todo app",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
+        "A Pokemon memory match game. Match all 6 pokemon to set 3 stars. But, Watch out for Team Rocket",
       details: "",
       links: {
-        website: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+        website: {
+          url: "https://vercel.com/patrickreynoldscoding/pokemon-match",
+          deployed: true,
+        },
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "./project_card_images/PokemonMatch(high).gif",
+        gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
         projectImage: "",
       },
     },
