@@ -16,7 +16,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "../../public/project_card_images/PokemonMatch(low).gif",
+        gif: "./project_card_images/PokemonMatch(high).gif",
         projectImage: "",
       },
     },
@@ -30,7 +30,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "../../public/project_card_images/PokemonMatch(low).gif",
+        gif: "./project_card_images/PokemonMatch(high).gif",
         projectImage: "",
       },
     },
@@ -44,7 +44,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "../../public/project_card_images/PokemonMatch(low).gif",
+        gif: "./project_card_images/PokemonMatch(high).gif",
         projectImage: "",
       },
     },
@@ -58,7 +58,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "../../public/project_card_images/PokemonMatch(low).gif",
+        gif: "./project_card_images/PokemonMatch(high).gif",
         projectImage: "",
       },
     },
@@ -72,7 +72,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "../../public/project_card_images/PokemonMatch(low).gif",
+        gif: "./project_card_images/PokemonMatch(high).gif",
         projectImage: "",
       },
     },
@@ -86,7 +86,7 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
       },
       images: {
-        gif: "../../public/project_card_images/PokemonMatch(low).gif",
+        gif: "./project_card_images/PokemonMatch(high).gif",
         projectImage: "",
       },
     },
