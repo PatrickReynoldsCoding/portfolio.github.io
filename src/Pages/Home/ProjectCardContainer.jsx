@@ -47,9 +47,8 @@ export default function ProjectCardContainer() {
         paragraphs: [
           "PairUp: Connect, Collaborate & Create. Boost your skills through pair programming and share knowledge. Post your projects, join others, and build a network of skilled coders. Join the community now!",
           "The Ultimate Platform for Coders. Are you tired of working on coding projects alone? Are you looking for an opportunity to collaborate with other coders and enhance your skills? Look no further than PairUp! Our platform is designed to connect coders from all over the world, allowing them to work together on projects, engage in pair programming sessions, and share knowledge with each other.",
-          "With PairUp, you can create projects, post them on the platform, and find users to join you. Our user-friendly interface makes it easy to connect with other coders who live near you, or who share similar interests and skills. Whether you're a beginner or a seasoned pro, PairUp has something to offer everyone. Join our community today and start building meaningful connections with like-minded coders!",
-          "Born from a 5-person team project during the Makers Academy Bootcamp, this cutting-edge platform is perfect for coders looking to collaborate and enhance their skills. The front end is built with React, navigated with React-router-dom, and styled with Material UI React. The database is powered by MongoDB and Mongoose, with user authorization handled through Passport JWT and JSON WEB TOKENS.",
-          "Rigorously tested with Jest and Cypress, and integrated through GitHub CI.",
+          "With PairUp, you can create projects, post them on the platform, and find users to join you. Our user-friendly interface makes it easy to connect with other coders who live near you, and who share similar interests and skills. Or connect with coders long distance using our proprietary video chat software for a seamless collaboration experience. Whether you're a beginner or a seasoned pro, PairUp has something to offer everyone. Join our community today and start building meaningful connections with like-minded coders!",
+          "Born from a 5-person team project during the Makers Academy Bootcamp, this platform is designed to enhance your coding skills through collaboration. The front-end is built with React, navigated with React-router-dom, and styled with Material UI React. The database is powered by MongoDB and Mongoose, with user authorization handled through Passport JWT and JSON WEB TOKENS. The video chat is powered by socket.io and simple-peer. Rigorously tested with Jest and Cypress, and integrated through GitHub CI, this platform offers a seamless experience for coders to connect and work together.",
         ],
         links: {
           website: {
@@ -60,7 +59,7 @@ export default function ProjectCardContainer() {
         },
       },
       media: {
-        gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
+        gif: "./project_card_images/project-gifs/pair-up-high.gif",
         projectImage: "",
         youtube: (
           <iframe
