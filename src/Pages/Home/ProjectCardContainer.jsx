@@ -22,7 +22,7 @@ export default function ProjectCardContainer() {
       },
 
       media: {
-        gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
+        gif: "./project_images/project-gifs/PokemonMatch-high.gif",
         projectImage: "",
       },
     },
@@ -41,7 +41,7 @@ export default function ProjectCardContainer() {
         },
       },
       media: {
-        gif: "./project_card_images/project-gifs/sweepstakes-high.gif",
+        gif: "./project_images/project-gifs/sweepstakes-high.gif",
         projectImage: "",
       },
     },
@@ -64,7 +64,7 @@ export default function ProjectCardContainer() {
         },
       },
       media: {
-        gif: "./project_card_images/project-gifs/pair-up-high.gif",
+        gif: "./project_images/project-gifs/pair-up-high.gif",
         projectImage: "",
         youtube: (
           <iframe
@@ -77,6 +77,22 @@ export default function ProjectCardContainer() {
             allowfullscreen
           ></iframe>
         ),
+      },
+    },
+    {
+      key: "React Todo app",
+      subtitle: "",
+      details: "",
+      links: {
+        website: {
+          url: null,
+          deployed: false,
+        },
+        github: "https://github.com/PatrickReynoldsCoding/react_todo_app",
+      },
+      media: {
+        gif: "./project_images/MERN-Todo-app.png",
+        projectImage: "",
       },
     },
     {
@@ -98,41 +114,24 @@ export default function ProjectCardContainer() {
         },
       },
       media: {
-        gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
+        gif: "./project_images/project-gifs/acebook-project-image.png",
         projectImage: "",
       },
     },
     {
       key: "MakersAirBNB",
       subtitle:
-        "A Pokemon memory match game. Match all 6 pokemon to set 3 stars. But, Watch out for Team Rocket",
+        "A web application that allows users to list spaces they have available, and to hire spaces for the night.",
       details: "",
       links: {
         website: {
-          url: "https://vercel.com/patrickreynoldscoding/pokemon-match",
-          deployed: true,
+          url: null,
+          deployed: false,
         },
-        github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
+        github: "https://github.com/raphaella-rose/makersbnb",
       },
       media: {
-        gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
-        projectImage: "",
-      },
-    },
-    {
-      key: "React Todo app",
-      subtitle:
-        "A Pokemon memory match game. Match all 6 pokemon to set 3 stars. But, Watch out for Team Rocket",
-      details: "",
-      links: {
-        website: {
-          url: "https://vercel.com/patrickreynoldscoding/pokemon-match",
-          deployed: true,
-        },
-        github: "https://github.com/PatrickReynoldsCoding/pokemon-match",
-      },
-      media: {
-        gif: "./project_card_images/project-gifs/PokemonMatch-high.gif",
+        gif: "./project_images/makersbnb/makerbnb-add-property.png",
         projectImage: "",
       },
     },

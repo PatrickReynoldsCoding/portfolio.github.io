@@ -11,7 +11,7 @@
 
 .project-card {
   display: flex;
-
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-basis: calc(
@@ -21,11 +21,29 @@
   width: 100%;
   min-width: 20%; /* adjust to your needs */
 }
+.project-card::before {
+  content: "in progress";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #efdf35;
+  color: #000;
+  transform: rotate(315deg);
+  margin: 48.6% 0 0 76.6%;
+  width: 30%;
+  height: 10%;
+  text-align: center;
+  clip-path: polygon(0 -1%, 99% 0, calc(113% - 33.9%) 100%, 32.75% 159%);
+}
+
 .project-card-img {
   align-self: flex-start;
   object-fit: cover;
-  background-size: cover;
-  background-position: center;
+  background-size: auto;
+  background-position: 0% 0%;
   aspect-ratio: 5 / 3;
   width: 100%;
 }
