@@ -21,7 +21,7 @@
   width: 100%;
   min-width: 20%; /* adjust to your needs */
 }
-.project-card::before {
+.in-development::before {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   font-size: x-small;

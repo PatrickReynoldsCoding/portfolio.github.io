@@ -8,6 +8,7 @@ export default function ProjectCardContainer() {
   const projects = [
     {
       key: "Pokemon Match",
+      inDevelopment: true,
       subtitle:
         "A Pokemon memory match game. Match all 6 pokemon to set 3 stars. But, Watch out for Team Rocket",
       details: {
@@ -28,6 +29,7 @@ export default function ProjectCardContainer() {
     },
     {
       key: "SweepStakes 2022",
+      inDevelopment: false,
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
       details: {
@@ -47,6 +49,7 @@ export default function ProjectCardContainer() {
     },
     {
       key: "PairUp",
+      inDevelopment: false,
       subtitle: "Connect, Collaborate & Create.",
       details: {
         paragraphs: [
@@ -81,6 +84,7 @@ export default function ProjectCardContainer() {
     },
     {
       key: "React Todo app",
+      inDevelopment: false,
       subtitle: "",
       details: "",
       links: {
@@ -97,6 +101,7 @@ export default function ProjectCardContainer() {
     },
     {
       key: "Acebook",
+      inDevelopment: false,
       subtitle: "A Facebook clone focusing on backend technologies",
       details: {
         paragraphs: [
@@ -120,6 +125,7 @@ export default function ProjectCardContainer() {
     },
     {
       key: "MakersAirBNB",
+      inDevelopment: false,
       subtitle:
         "A web application that allows users to list spaces they have available, and to hire spaces for the night.",
       details: "",

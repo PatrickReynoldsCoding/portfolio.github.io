@@ -4,7 +4,11 @@ import "./projects.css";
 
 export default function ProjectCard(props) {
   return (
-    <div className="project-card">
+    <div
+      className={`project-card ${
+        props.project.inDevelopment ? "in-development" : ""
+      }`}
+    >
       <img
         className="project-card-img"
         src={props.project.media.gif}
