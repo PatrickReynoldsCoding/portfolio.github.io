@@ -7,6 +7,27 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectCardContainer() {
   const projects = [
     {
+      key: "Samuel Hinkinson UX Portfolio",
+      inDevelopment: true,
+      subtitle: "A portfolio site for UX designer Samuel Hinkinson",
+      details: {
+        paragraphs: [],
+        links: {
+          website: {
+            url: "https://samuel-hinkinson-portfolio.vercel.app/",
+            deployed: true,
+          },
+          github:
+            "https://github.com/PatrickReynoldsCoding/samuel-hinkinson-portfolio",
+        },
+      },
+
+      media: {
+        gif: "./project_images/project-gifs/samuel-hinkinson-dot-com.gif",
+        projectImage: "",
+      },
+    },
+    {
       key: "Pokemon Match",
       inDevelopment: true,
       subtitle:
@@ -83,7 +104,7 @@ export default function ProjectCardContainer() {
       },
     },
     {
-      key: "React Todo app",
+      key: "MERN Todo app",
       inDevelopment: false,
       subtitle: "",
       details: "",
