@@ -41,8 +41,8 @@ const projects = [
     media: {
       gif: "./project-images/project-gifs/samuel-hinkinson-dot-com.gif",
       projectImages: [
-        "../../public/project-images/samuel-hinkinson-ux-portfolio/project-page/1.png",
-        "../../public/project-images/samuel-hinkinson-ux-portfolio/project-page/2.png",
+        "../../project-images/samuel-hinkinson-ux-portfolio/project-page/1.png",
+        "../../project-images/samuel-hinkinson-ux-portfolio/project-page/2.png",
       ],
     },
   },

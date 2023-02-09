@@ -1,5 +1,5 @@
 import React from "react";
-import icon from "../../public/latest-sphere-logo.png";
+import icon from "../../src/assets/latest-sphere-logo.png";
 export default function YoutubeIcon() {
   return (
     <div>

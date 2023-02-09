@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
-import logo from "../../public/logo.png";
+import logo from "../../src/assets/logo.png";
 
 //components
 import YoutubeIcon from "./YoutubeIcon";
