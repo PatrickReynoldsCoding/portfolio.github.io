@@ -7,7 +7,11 @@ import "./App.css";
 import { NavigationBar } from "./Components/NavigationBar";
 
 // Pages
-import { NavHome, NavContact } from "./Components/NavigationBarAdder";
+import {
+  NavHome,
+  NavContact,
+  NavProject,
+} from "./Components/NavigationBarAdder";
 
 function App() {
   return (
@@ -16,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<NavHome />} />
           <Route path="/contact" element={<NavContact />} />
+          <Route path="/project/:name" element={<NavProject />} />
         </Routes>
       </BrowserRouter>
     </div>

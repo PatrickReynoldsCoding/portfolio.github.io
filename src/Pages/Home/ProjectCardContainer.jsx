@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./projects.css";
 
 // components
@@ -7,6 +8,7 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectCardContainer() {
   const projects = [
     {
+      name: "Samuel-Hinkinson-UX-Portfolio",
       key: "Samuel Hinkinson UX Portfolio",
       inDevelopment: true,
       subtitle: "A portfolio site for UX designer Samuel Hinkinson",
@@ -166,7 +168,17 @@ export default function ProjectCardContainer() {
   return (
     <div className="project-container">
       {projects.map((project) => {
-        return <ProjectCard project={project} key={project.key} />;
+        return (
+          <Link
+            to={{
+              pathname: `/project/${project.id}`,
+              state: { project },
+            }}
+            key={project.key}
+          >
+            <ProjectCard project={project} key={project.key} />;
+          </Link>
+        );
       })}
     </div>
   );
