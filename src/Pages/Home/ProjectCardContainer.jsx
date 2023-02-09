@@ -8,9 +8,9 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectCardContainer() {
   const projects = [
     {
-      key: "Samuel Hinkinson UX Portfolio",
+      title: "Samuel Hinkinson UX Portfolio",
       inDevelopment: true,
-      name: "samuel-hinkinson-ux-portfolio",
+      key: "samuel-hinkinson-ux-portfolio",
       subtitle: "A portfolio site for UX designer Samuel Hinkinson",
       details: {
         paragraphs: [],
@@ -30,9 +30,9 @@ export default function ProjectCardContainer() {
       },
     },
     {
-      key: "Pokemon Match",
+      title: "Pokemon Match",
       inDevelopment: true,
-      name: "pokemon-match",
+      key: "pokemon-match",
       subtitle:
         "A Pokemon memory match game. Match all 6 pokemon to set 3 stars. But, Watch out for Team Rocket",
       details: {
@@ -52,9 +52,9 @@ export default function ProjectCardContainer() {
       },
     },
     {
-      key: "SweepStakes 2022",
+      title: "SweepStakes 2022",
       inDevelopment: false,
-      name: "sweepStakes-2022",
+      key: "sweepStakes-2022",
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
       details: {
@@ -73,9 +73,9 @@ export default function ProjectCardContainer() {
       },
     },
     {
-      key: "PairUp",
+      title: "PairUp",
       inDevelopment: false,
-      name: "pair-up",
+      key: "pair-up",
       subtitle: "Connect, Collaborate & Create.",
       details: {
         paragraphs: [
@@ -109,9 +109,9 @@ export default function ProjectCardContainer() {
       },
     },
     {
-      key: "MERN Todo app",
+      title: "MERN Todo app",
       inDevelopment: false,
-      name: "mern-todo-app",
+      key: "mern-todo-app",
       subtitle: "",
       details: "",
       links: {
@@ -127,9 +127,9 @@ export default function ProjectCardContainer() {
       },
     },
     {
-      key: "Acebook",
+      title: "Acebook",
       inDevelopment: false,
-      name: "acebook",
+      key: "acebook",
       subtitle: "A Facebook clone focusing on backend technologies",
       details: {
         paragraphs: [
@@ -152,9 +152,9 @@ export default function ProjectCardContainer() {
       },
     },
     {
-      key: "MakersAirBNB",
+      title: "MakersAirBNB",
       inDevelopment: false,
-      name: "makers-air-bnb",
+      key: "makers-air-bnb",
       subtitle:
         "A web application that allows users to list spaces they have available, and to hire spaces for the night.",
       details: "",
@@ -177,12 +177,12 @@ export default function ProjectCardContainer() {
         return (
           <Link
             to={{
-              pathname: `/project/${project.name}`,
+              pathname: `/project/${project.key}`,
             }}
             state={{ project: project }}
             key={project.key}
           >
-            <ProjectCard project={project} key={project.name} />;
+            <ProjectCard project={project} key={project.key} />;
           </Link>
         );
       })}
