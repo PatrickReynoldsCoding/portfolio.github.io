@@ -19,14 +19,11 @@ export default function ProjectPage() {
   return (
     <div className="project-page-wrapper">
       <h1>{project.title}</h1>
-      {/* {console.log(project.media.projectImages)}
+      {console.log(project.media.projectImages)}
       {project.media.projectImages.map((image) => {
         return <img src={image} key={image} />;
-      })} */}
-      <img
-        src="../../project-images/samuel-hinkinson-ux-portfolio/project-page/1.png"
-        alt=""
-      />
+      })}
+
       {/* <div className="project page image">
         <div className="project-page-main-image">
           <img id="expandedImg" />
