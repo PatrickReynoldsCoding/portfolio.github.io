@@ -10,7 +10,7 @@ import { NavigationBar } from "./Components/NavigationBar";
 import {
   NavHome,
   NavContact,
-  NavProject,
+  NavProjectPage,
 } from "./Components/NavigationBarAdder";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<NavHome />} />
           <Route path="/contact" element={<NavContact />} />
-          <Route path="/project/:name" element={<NavProject />} />
+          <Route path="/project/:name" element={<NavProjectPage />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -8,9 +8,9 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectCardContainer() {
   const projects = [
     {
-      name: "Samuel-Hinkinson-UX-Portfolio",
       key: "Samuel Hinkinson UX Portfolio",
       inDevelopment: true,
+      name: "samuel-hinkinson-ux-portfolio",
       subtitle: "A portfolio site for UX designer Samuel Hinkinson",
       details: {
         paragraphs: [],
@@ -32,6 +32,7 @@ export default function ProjectCardContainer() {
     {
       key: "Pokemon Match",
       inDevelopment: true,
+      name: "pokemon-match",
       subtitle:
         "A Pokemon memory match game. Match all 6 pokemon to set 3 stars. But, Watch out for Team Rocket",
       details: {
@@ -53,6 +54,7 @@ export default function ProjectCardContainer() {
     {
       key: "SweepStakes 2022",
       inDevelopment: false,
+      name: "sweepStakes-2022",
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
       details: {
@@ -73,6 +75,7 @@ export default function ProjectCardContainer() {
     {
       key: "PairUp",
       inDevelopment: false,
+      name: "pair-up",
       subtitle: "Connect, Collaborate & Create.",
       details: {
         paragraphs: [
@@ -108,6 +111,7 @@ export default function ProjectCardContainer() {
     {
       key: "MERN Todo app",
       inDevelopment: false,
+      name: "mern-todo-app",
       subtitle: "",
       details: "",
       links: {
@@ -125,6 +129,7 @@ export default function ProjectCardContainer() {
     {
       key: "Acebook",
       inDevelopment: false,
+      name: "acebook",
       subtitle: "A Facebook clone focusing on backend technologies",
       details: {
         paragraphs: [
@@ -149,6 +154,7 @@ export default function ProjectCardContainer() {
     {
       key: "MakersAirBNB",
       inDevelopment: false,
+      name: "makers-air-bnb",
       subtitle:
         "A web application that allows users to list spaces they have available, and to hire spaces for the night.",
       details: "",
@@ -168,17 +174,17 @@ export default function ProjectCardContainer() {
   return (
     <div className="project-container">
       {projects.map((project) => {
-        return (
-          <Link
-            to={{
-              pathname: `/project/${project.id}`,
-              state: { project },
-            }}
-            key={project.key}
-          >
-            <ProjectCard project={project} key={project.key} />;
-          </Link>
-        );
+        return console.log(project.key);
+        // <Link
+        //   to={{
+        //     pathname: `/project/${project.id}`,
+        //     state: { project },
+        //   }}
+        //   key={project.key}
+        // >
+        // <ProjectCard project={project} key={project.key} />;
+
+        // </Link>
       })}
     </div>
   );
