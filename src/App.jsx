@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<NavHome />} />
           <Route exact path="/contact" element={<NavContact />} />
-          <Route path="/project" element={<NavProjectPage />} />
+          <Route path="/project/:id" element={<NavProjectPage />} />
         </Routes>
       </BrowserRouter>
     </div>

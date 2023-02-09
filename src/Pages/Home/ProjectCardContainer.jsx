@@ -177,7 +177,7 @@ export default function ProjectCardContainer() {
         return (
           <Link
             to={{
-              pathname: `/project`,
+              pathname: `/project/${project.name}`,
               state: { hello: "hello" },
             }}
             key={project.key}
