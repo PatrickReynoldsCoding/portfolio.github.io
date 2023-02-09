@@ -25,8 +25,10 @@ export default function ProjectCardContainer() {
       },
 
       media: {
-        gif: "./project_images/project-gifs/samuel-hinkinson-dot-com.gif",
-        projectImage: "",
+        gif: "./project-images/project-gifs/samuel-hinkinson-dot-com.gif",
+        projectImages: [
+          "../../public/project-images/sam-hink-portfolio/project-page/pinball.png",
+        ],
       },
     },
     {
@@ -47,14 +49,14 @@ export default function ProjectCardContainer() {
       },
 
       media: {
-        gif: "./project_images/project-gifs/PokemonMatch-high.gif",
-        projectImage: "",
+        gif: "./project-images/project-gifs/PokemonMatch-high.gif",
+        projectImages: "",
       },
     },
     {
-      title: "SweepStakes 2022",
+      title: "Sweepstakes 2022",
       inDevelopment: false,
-      key: "sweepStakes-2022",
+      key: "sweepstakes-2022",
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur!",
       details: {
@@ -68,8 +70,8 @@ export default function ProjectCardContainer() {
         },
       },
       media: {
-        gif: "./project_images/project-gifs/sweepstakes-high.gif",
-        projectImage: "",
+        gif: "./project-images/project-gifs/sweepstakes-high.gif",
+        projectImages: "",
       },
     },
     {
@@ -93,8 +95,8 @@ export default function ProjectCardContainer() {
         },
       },
       media: {
-        gif: "./project_images/project-gifs/pair-up-high.gif",
-        projectImage: "",
+        gif: "./project-images/project-gifs/pair-up-high.gif",
+        projectImages: "",
         youtube: (
           <iframe
             width="560"
@@ -122,8 +124,8 @@ export default function ProjectCardContainer() {
         github: "https://github.com/PatrickReynoldsCoding/react_todo_app",
       },
       media: {
-        gif: "./project_images/MERN-Todo-app.png",
-        projectImage: "",
+        gif: "./project-images/mern-todo-app/MERN-Todo-app.png",
+        projectImages: "",
       },
     },
     {
@@ -147,14 +149,14 @@ export default function ProjectCardContainer() {
         },
       },
       media: {
-        gif: "./project_images/project-gifs/acebook-project-image.png",
-        projectImage: "",
+        gif: "./project-images/project-gifs/acebook-project-image.png",
+        projectImages: "",
       },
     },
     {
-      title: "MakersAirBNB",
+      title: "MakersBNB",
       inDevelopment: false,
-      key: "makers-air-bnb",
+      key: "makers-bnb",
       subtitle:
         "A web application that allows users to list spaces they have available, and to hire spaces for the night.",
       details: "",
@@ -166,8 +168,8 @@ export default function ProjectCardContainer() {
         github: "https://github.com/raphaella-rose/makersbnb",
       },
       media: {
-        gif: "./project_images/makersbnb/makerbnb-add-property.png",
-        projectImage: "",
+        gif: "./project-images/makers-bnb/makerbnb-add-property.png",
+        projectImages: "",
       },
     },
   ];
