@@ -174,18 +174,38 @@ export default function ProjectCardContainer() {
   return (
     <div className="project-container">
       {projects.map((project) => {
-        return console.log(project.key);
-        // <Link
-        //   to={{
-        //     pathname: `/project/${project.id}`,
-        //     state: { project },
-        //   }}
-        //   key={project.key}
-        // >
-        // <ProjectCard project={project} key={project.key} />;
-
-        // </Link>
+        return (
+          <Link
+            to={{
+              pathname: `/project`,
+              state: { hello: "hello" },
+            }}
+            key={project.key}
+          >
+            <ProjectCard project={project} key={project.name} />;
+          </Link>
+        );
       })}
     </div>
   );
 }
+
+// with params:
+
+//   return (
+//     <div className="project-container">
+//       {projects.map((project) => {
+//         // return console.log(project.name);
+//         <Link
+//           to={{
+//             pathname: `/project/${project.name}`,
+//             state: { project },
+//           }}
+//           key={project.key}
+//         >
+//           <ProjectCard project={project} key={project.key} />;
+//         </Link>;
+//       })}
+//     </div>
+//   );
+// }

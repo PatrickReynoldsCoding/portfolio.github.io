@@ -18,9 +18,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<NavHome />} />
-          <Route path="/contact" element={<NavContact />} />
-          <Route path="/project/:name" element={<NavProjectPage />} />
+          <Route exact path="/" element={<NavHome />} />
+          <Route exact path="/contact" element={<NavContact />} />
+          <Route path="/project" element={<NavProjectPage />} />
         </Routes>
       </BrowserRouter>
     </div>
