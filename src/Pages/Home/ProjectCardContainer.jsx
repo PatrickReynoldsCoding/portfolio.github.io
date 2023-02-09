@@ -179,7 +179,7 @@ export default function ProjectCardContainer() {
             to={{
               pathname: `/project/${project.name}`,
             }}
-            state={{ hello: "hello from state" }}
+            state={{ project: project }}
             key={project.key}
           >
             <ProjectCard project={project} key={project.name} />;
