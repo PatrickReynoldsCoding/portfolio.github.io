@@ -1,5 +1,4 @@
 import React, { useState, useEffect, Component } from "react";
-import styled from "styled-components";
 
 // Components
 import TopToggle from "./TopToggle";
@@ -25,7 +24,7 @@ export default function Home() {
         <HomeAnimation className="animation-container" />
       )}
       <TopToggle switchPage={switchPage} />
-      {showAbout ? <About /> : <Projects />}
+      {showAbout ? <About enabled={showAbout} /> : <Projects />}
     </div>
   );
 }
