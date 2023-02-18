@@ -24,7 +24,7 @@ export default function Home() {
         <HomeAnimation className="animation-container" />
       )}
       <TopToggle switchPage={switchPage} />
-      {showAbout ? <About enabled={showAbout} /> : <Projects />}
+      {showAbout ? <About /> : <Projects />}
     </div>
   );
 }

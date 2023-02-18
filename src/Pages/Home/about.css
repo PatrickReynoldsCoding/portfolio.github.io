@@ -64,11 +64,11 @@ h2.underline-sweep::after {
   }
 }
 
-/* .hidden {
+.hidden {
   filter: blur(3px);
   opacity: 0;
   transition: all 1.5s;
-} */
+}
 .left {
   grid-column: 6 / 8;
 }

@@ -5,26 +5,36 @@ export default function About(props) {
   const observerRef = useRef(null);
 
   useEffect(() => {
-    if (props.enabled) {
-      observerRef.current = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-            // window.scrollTo({
-            //   top: entry.target.offsetTop - window.innerHeight / 2,
-            //   left: 0,
-            //   behavior: "smooth",
-            // });
-          } else {
-            entry.target.classList.remove("show");
-          }
-        });
+    // Set up the IntersectionObserver in the effect hook
+    observerRef.current = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          // snap to position
+          // window.scrollTo({
+          //   top: entry.target.offsetTop - window.innerHeight / 2,
+          //   left: 0,
+          //   behavior: "smooth",
+          // });
+        } else {
+          entry.target.classList.remove("show");
+        }
       });
-      const hiddenElements = document.querySelectorAll(".hidden");
-      hiddenElements.forEach((el) => observerRef.current.observe(el));
-      return () => observerRef.current.disconnect();
-    }
+    });
+
+    // Observe hidden elements in the DOM
+    const hiddenElements = document.querySelectorAll(".hidden");
+    hiddenElements.forEach((el) => observerRef.current.observe(el));
+
+    // Return a cleanup function to disconnect the IntersectionObserver when the component is unmounted
+    return () => {
+      // Check if the observerRef.current is not null before calling its methods
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+    };
   }, []);
+
   return (
     <div>
       <article className="about-container">
@@ -42,7 +52,7 @@ export default function About(props) {
         </div>
         <div ref={observerRef} className="scroll-area">
           <section className="about-page-section hidden left">
-            <h2 className="underline-sweep">Experience</h2>
+            <h2>Experience</h2>
             <h3>Makers Academy • Full stack developer bootcamp</h3>
 
             <ol>
@@ -77,7 +87,7 @@ export default function About(props) {
         </div>
         <div ref={observerRef} className="scroll-area">
           <section className="about-page-section hidden">
-            <h2 className="underline-sweep">Skills</h2>
+            <h2>Skills</h2>
             <h3>Software</h3>
             <ul>
               <li>JavaScript, React.js, Node.js, Express, Jest, Cypress</li>
