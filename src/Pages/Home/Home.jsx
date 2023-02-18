@@ -2,10 +2,10 @@ import React, { useState, useEffect, Component } from "react";
 import styled from "styled-components";
 
 // Components
-import TopToggle from "./TopToggle";
+import HomeTopToggle from "./HomeTopToggle";
 import { HomeAnimation } from "./HomeAnimation";
-import About from "./About";
-import Projects from "./Projects";
+import About from "./About/About";
+import Projects from "./Projects/Projects";
 
 export default function Home() {
   const [showAbout, setShowAbout] = useState(true);
@@ -24,7 +24,7 @@ export default function Home() {
       {animationHasMounted ? null : (
         <HomeAnimation className="animation-container" />
       )}
-      <TopToggle switchPage={switchPage} />
+      <HomeTopToggle switchPage={switchPage} />
       {showAbout ? <About /> : <Projects />}
     </div>
   );

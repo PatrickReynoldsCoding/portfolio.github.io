@@ -67,7 +67,7 @@ const LineUnder = styled.div`
   transition: margin-left 0.2s ease;
 `;
 
-export default function TopToggle(props) {
+export default function HomeTopToggle(props) {
   const [currentView, setCurrentView] = useState("about");
   const [isAboutActive, setIsAboutActive] = useState(true);
 
