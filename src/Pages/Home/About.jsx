@@ -43,6 +43,7 @@ export default function About() {
               Tech Skills: JavaScript, React.js, Node.js, Express, Jest,
               Cypress, HTML, SCSS, CSS, Ruby, Sinatra, RSpec */}
             </p>
+            <div className="keep-scrolling">Keep scrolling ...</div>
           </section>
         </div>
         <div ref={observerRef} className="scroll-area">
