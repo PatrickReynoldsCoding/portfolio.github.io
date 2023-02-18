@@ -43,7 +43,7 @@ const ToggleButton = styled.button`
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  animation: ${(props) => (props.isActive ? bounceIn : bounceOut)} 0.5s;
+  animation: ${(props) => (props.isActive ? bounceIn : bounceOut)} 0.5s forwards;
   z-index: 2;
 
   &.active {
