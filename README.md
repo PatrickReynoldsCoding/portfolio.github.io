@@ -73,6 +73,12 @@
     }
 ```
 
+#### Script
+
+add this script to package.json:
+
+`"lint": "eslint . --ext .js,.jsx",`
+
 #### Run
 
 `npm run lint`

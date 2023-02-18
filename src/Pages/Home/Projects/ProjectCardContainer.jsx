@@ -19,7 +19,7 @@ export default function ProjectCardContainer() {
             state={{ project: project }}
             key={project.key}
           >
-            <ProjectCard project={project} key={project.key} />;
+            <ProjectCard project={project} key={project.key} />
           </Link>
         );
       })}
