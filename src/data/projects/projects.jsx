@@ -25,7 +25,8 @@ const projects = [
     key: "samuel-hinkinson-ux-portfolio",
     subtitle: "A portfolio site for UX designer Samuel Hinkinson",
     details: {
-      paragraphs: [],
+      paragraphs:
+        "This is a project made for UX designer Samuel Hinkinson. His brief was to create a simple portfolio website to showcase his work. The centerpiece of this site is the interactive pinball game you play to enter the site. Samuel created the image of his face and asked if it was possible to make it a playball game of pinball. This was made using Matter.js.",
       links: {
         website: {
           url: "https://samuel-hinkinson-portfolio.vercel.app/",
@@ -37,7 +38,7 @@ const projects = [
     },
 
     media: {
-      gif: "./project-images/project-gifs/samuel-hinkinson-dot-com.gif",
+      gif: "../../project-images/project-gifs/samuel-hinkinson-dot-com.gif",
       projectImages: [
         "../../project-images/samuel-hinkinson-ux-portfolio/project-page/1.png",
         "../../project-images/samuel-hinkinson-ux-portfolio/project-page/2.png",
