@@ -18,8 +18,7 @@
     33% - 20px
   ); /* adjust the 20px to the desired space between children */
   text-align: center;
-  width: 100%;
-  min-width: 20%; /* adjust to your needs */
+  max-width: 30vw; /* adjust to your needs */
 }
 .in-development::before {
   font-family: "Courier New", Courier, monospace;
@@ -64,6 +63,7 @@
   font-size: 51px;
   line-height: 200%;
   word-wrap: break-word;
+
   /* word-spacing: 9999px;
   white-space: pre-line; */
 }

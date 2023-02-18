@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
+import logo from "../../src/assets/logo.png";
 
 //components
 import YoutubeIcon from "./YoutubeIcon";
@@ -78,7 +80,9 @@ const Circle = styled.div`
 export const NavigationBar = () => {
   return (
     <Navbar>
-      <Logo src="./logo.png"></Logo>
+      <Link to="/">
+        <Logo src={logo}></Logo>
+      </Link>
       {/* <Hamburger>
         <Circle className="circle" />
         <Circle className="circle" />

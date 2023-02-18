@@ -1,0 +1,47 @@
+.project-page-wrapper {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  background-color: rgba(88, 88, 88, 0.5); /* Transparent background */
+  border-radius: 10px; /* Rounded corners */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+  padding: 2%;
+}
+
+.project-page-main-image img {
+  width: 100%;
+}
+
+.project-page-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-page-title-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.project-page-title h1 {
+  font-size: 150%;
+}
+
+.project-page-subtitle h2 {
+  font-size: 80%;
+  font-weight: 500;
+  line-height: 105%;
+}
+
+.project-page-details {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
