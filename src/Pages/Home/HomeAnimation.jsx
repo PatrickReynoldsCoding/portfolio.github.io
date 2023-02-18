@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-import { OrbitingShapes } from "./ThreeJsAnimations/OrbitingShapes";
+import { OrbitingShapes } from "../../Components/ThreeJsAnimations/OrbitingShapes";
 
 export const HomeAnimation = () => {
   // const canvasRef = useRef(null);

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./projects.css";
 
 // data
-import projects from "../../data/projects/projects";
+import projects from "../../../data/projects/projects";
 // components
 import ProjectCard from "./ProjectCard";
 
