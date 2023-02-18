@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "cypress": "^12.6.0",
-    "jess": "^1.0.8-alpha.8",
+    "jest": "^29.4.3",
     "react": "^18.2.0",
     "react-animations": "^1.0.0",
     "react-dom": "^18.2.0",
