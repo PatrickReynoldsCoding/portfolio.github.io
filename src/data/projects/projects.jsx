@@ -20,6 +20,28 @@ const getImageFiles = async () => {
 
 const projects = [
   {
+    title: "SnapCat",
+    inDevelopment: true,
+    key: "SnapCat",
+    subtitle: "a site to learn more about cats",
+    details: {
+      paragraphs:
+        "This is a simple one page website built with Next.js. It's aim is to use a button to pull a cat fact and a cat image from two different APIs concurrently and present in a card.",
+      links: {
+        website: {
+          url: "https://snap-cat.vercel.app/",
+          deployed: true,
+        },
+        github: "https://github.com/PatrickReynoldsCoding/snap-cat",
+      },
+    },
+
+    media: {
+      gif: "../../project-images/project-gifs/snap-cat.gif",
+      projectImages: [],
+    },
+  },
+  {
     title: "Samuel Hinkinson UX Portfolio",
     inDevelopment: true,
     key: "samuel-hinkinson-ux-portfolio",
@@ -117,7 +139,7 @@ const projects = [
           height="315"
           src="https://www.youtube.com/embed/Tnpo-pIIVx0"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
