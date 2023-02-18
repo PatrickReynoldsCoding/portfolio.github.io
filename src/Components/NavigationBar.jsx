@@ -81,7 +81,7 @@ export const NavigationBar = () => {
   return (
     <Navbar>
       <Link to="/">
-        <Logo src={logo}></Logo>
+        <Logo className="logo" src={logo}></Logo>
       </Link>
       {/* <Hamburger>
         <Circle className="circle" />

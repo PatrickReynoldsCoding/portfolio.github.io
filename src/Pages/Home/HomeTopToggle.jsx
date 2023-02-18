@@ -80,7 +80,7 @@ export default function HomeTopToggle(props) {
   };
 
   return (
-    <ToggleContainer>
+    <ToggleContainer className="top-toggle-container">
       <ToggleButton
         disabled={isAboutActive}
         isActive={isAboutActive}
