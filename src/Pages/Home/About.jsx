@@ -82,7 +82,7 @@ export default function About() {
         </div>
         <div ref={observerRef} className="scroll-area">
           <section className="hidden">
-            <h2>If you want to get in touch find me in these places</h2>
+            <h2>Find me in these places</h2>
             <p>
               Email:{" "}
               <a href="https://mail.google.com/mail/u/0/?fs=1&to=PatrickReynolds@gmail.com&su=Hi%20Paddy&body=&tf=cm">
