@@ -21,7 +21,9 @@ export default function ProjectPage() {
     <div className="project-page-wrapper">
       <div className="project page image">
         <div className="project-page-main-image">
-          <img id="expandedImg" src={project.media.gif} type="image/gif" />
+          <a href={project.details.links.website.url}>
+            <img id="expandedImg" src={project.media.gif} type="image/gif" />
+          </a>
         </div>
         {/* <div className="project-page-all-images">
           {project.media.projectImages.map((image) => {
@@ -46,8 +48,8 @@ export default function ProjectPage() {
           <div className="project-page-link">
             <p>
               Visit the site:{" "}
-              <a href="https://samuel-hinkinson-portfolio.vercel.app/">
-                https://samuel-hinkinson-portfolio.vercel.app/
+              <a href={project.details.links.website.url}>
+                {project.details.links.website.url}
               </a>
             </p>
           </div>
