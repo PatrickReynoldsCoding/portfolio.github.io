@@ -14,7 +14,7 @@ const viewports = [
   "samsung-s10",
 ];
 
-describe("Homepage element check", () => {
+describe("Homepage functionality check", () => {
   viewports.forEach((viewport) => {
     describe(`on ${viewport} viewport`, () => {
       beforeEach(() => {
@@ -22,12 +22,14 @@ describe("Homepage element check", () => {
         cy.visit("/");
       });
 
-      it("renders the logo correctly", () => {
-        cy.get(".logo").should("be.visible");
+      it("has a functional scroll and loads all elements", () => {
+        cy.scrollTo("bottom");
+        cy.contains("Find me in these places");
       });
 
-      it("renders the top toggle correctly", () => {
-        cy.get(".top-toggle-container").should("be.visible");
+      it("takes the user to the project page and shows project cards", () => {
+        cy.get(".top-toggle-container").contains("Projects").click();
+        cy.get(".project-card").should("be.visible");
       });
     });
   });
